@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "wood-api:block/rubber_planks",
+    "side": "wood-api:block/rubber_planks",
+    "top": "wood-api:block/rubber_planks"
+  }
+}

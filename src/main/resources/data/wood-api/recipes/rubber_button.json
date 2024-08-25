@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_buttom",
+  "ingredients": [
+    {
+      "item": "wood-api:rubber_planks"
+    }
+  ],
+  "result": {
+    "item": "wood-api:rubber_button"
+  }
+}

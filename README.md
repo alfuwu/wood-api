@@ -1,0 +1,2 @@
+# Usage
+Wood API is an API that allows for quick creation of ENTIRE wood types. As an API, it cannot add textures, blockstates, loot tables, tags, et cetera, for any blocks it registers, and as such, even though it creates all of the blocks in code, there is still much work to be done for a fully functional wood type to be created. You may use the source code of this API as a template for your custom wood type, as it contains an example wood type within it.

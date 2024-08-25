@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "wood-api:rubber_log",
+    "wood-api:rubber_wood",
+    "wood-api:stripped_rubber_log",
+    "wood-api:stripped_rubber_wood",
+    "wood-api:rubber_planks",
+    "wood-api:rubber_stairs",
+    "wood-api:rubber_slab",
+    "wood-api:rubber_fence",
+    "wood-api:rubber_fence_gate",
+    "wood-api:rubber_door",
+    "wood-api:rubber_trapdoor",
+    "wood-api:rubber_pressure_plate",
+    "wood-api:rubber_button"
+  ]
+}

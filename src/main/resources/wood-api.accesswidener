@@ -1,0 +1,9 @@
+accessWidener v2 named
+
+accessible method net/minecraft/world/gen/foliage/FoliagePlacerType register (Ljava/lang/String;Lcom/mojang/serialization/Codec;)Lnet/minecraft/world/gen/foliage/FoliagePlacerType;
+accessible method net/minecraft/block/WoodType register (Lnet/minecraft/block/WoodType;)Lnet/minecraft/block/WoodType;
+extendable method net/minecraft/item/BoatItem createEntity (Lnet/minecraft/world/World;Lnet/minecraft/util/hit/HitResult;Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/PlayerEntity;)Lnet/minecraft/entity/vehicle/BoatEntity;
+
+extendable class net/minecraft/block/SaplingGenerator
+extendable method net/minecraft/block/SaplingGenerator getSmallTreeFeature (Lnet/minecraft/util/math/random/Random;Z)Lnet/minecraft/registry/RegistryKey;
+extendable method net/minecraft/block/SaplingGenerator getMegaTreeFeature (Lnet/minecraft/util/math/random/Random;)Lnet/minecraft/registry/RegistryKey;

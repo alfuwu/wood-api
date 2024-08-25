@@ -1,0 +1,9 @@
+{
+	"required": false,
+	"package": "com.alfred.woodapi.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [ ],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

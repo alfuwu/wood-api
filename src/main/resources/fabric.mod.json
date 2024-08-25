@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "wood-api",
+	"version": "${version}",
+	"name": "Wood API",
+	"description": "",
+	"authors": [
+		"alfuwu"
+	],
+	"contact": {
+		"sources": "https://github.com/alfuwu/wood-api"
+	},
+	"accessWidener": "wood-api.accesswidener",
+	"license": "MIT",
+	"icon": "assets/wood-api/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.alfred.woodapi.WoodApi"
+		],
+		"client": [
+			"com.alfred.woodapi.WoodApiClient"
+		]
+	},
+	"mixins": [
+		"wood-api.mixins.json",
+		{
+			"config": "wood-api.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
