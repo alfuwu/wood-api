@@ -1,5 +1,6 @@
 package com.alfred.woodapi.registry;
 
+import com.alfred.woodapi.Wood;
 import com.alfred.woodapi.WoodApi;
 import com.alfred.woodapi.block.entity.SignBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
@@ -19,7 +20,7 @@ public class BlockEntities {
         FabricBlockEntityTypeBuilder<SignBlockEntity> signBuilder = FabricBlockEntityTypeBuilder.create(SignBlockEntity::new);
         FabricBlockEntityTypeBuilder<SignBlockEntity> hangingSignBuilder = FabricBlockEntityTypeBuilder.create(SignBlockEntity::new);
 
-        for (Blocks.Wood wood : Blocks.Wood.WOODS) {
+        for (Wood wood : Wood.WOODS) {
             signBuilder.addBlocks(wood.sign, wood.wallSign);
             hangingSignBuilder.addBlocks(wood.hangingSign, wood.wallHangingSign);
         }
