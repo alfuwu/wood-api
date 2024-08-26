@@ -1,7 +1,7 @@
 package com.alfred.woodapi.render.entity;
 
+import com.alfred.woodapi.registry.Wood;
 import com.alfred.woodapi.entity.BoatEntity;
-import com.alfred.woodapi.registry.EntityTypes;
 import com.google.common.collect.ImmutableMap;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.model.ModelPart;
@@ -26,7 +26,7 @@ public class BoatEntityRenderer extends EntityRenderer<BoatEntity> {
 
     public BoatEntityRenderer(EntityRendererFactory.Context ctx) {
         super(ctx);
-        this.texturesAndModels = EntityTypes.BOAT_TYPES.stream().collect(ImmutableMap.toImmutableMap(type -> type, type ->
+        this.texturesAndModels = Wood.BOAT_TYPES.stream().collect(ImmutableMap.toImmutableMap(type -> type, type ->
                 Pair.of(getTexture(type), this.createModel(ctx, type))));
     }
 
