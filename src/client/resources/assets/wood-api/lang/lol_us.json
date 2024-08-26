@@ -1,0 +1,23 @@
+{
+  "block.wood-api.rubber_leaves": "chewy lef",
+  "block.wood-api.rubber_sapling": "baby chewy tree",
+  "block.wood-api.rubber_log": "chew lawg",
+  "block.wood-api.rubber_wood": "chewy wod",
+  "block.wood-api.stripped_rubber_log": "Naked chew lawg",
+  "block.wood-api.stripped_rubber_wood": "nakid chewy wud",
+  "block.wood-api.rubber_planks": "chew bloc",
+  "block.wood-api.rubber_stairs": "CHEW STAYRS",
+  "block.wood-api.rubber_slab": "chewy half bloc",
+  "block.wood-api.rubber_fence": "chew fenz",
+  "block.wood-api.rubber_fence_gate": "Chewy wud fenc gayt",
+  "block.wood-api.rubber_door": "chew dor",
+  "block.wood-api.rubber_trapdoor": "chew floor dor",
+  "block.wood-api.rubber_pressure_plate": "Chewy prsuer pleitz",
+  "block.wood-api.rubber_button": "chew dot",
+  "block.wood-api.rubber_sign": "Chewy Sign",
+  "block.wood-api.rubber_hanging_sign": "Chewy Danglin' Sign",
+  "block.wood-api.rubber_wall_sign": "Chewy Sign",
+  "block.wood-api.rubber_wall_hanging_sign": "Chewy Danglin' Sign",
+  "item.wood-api.rubber_boat": "Chewy Watr Car",
+  "item.wood-api.rubber_chest_boat": "Chewy Watr Car wit da cat box"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "wood-api:stripped_rubber_wood"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "wood-api:blocks/stripped_rubber_wood"
+}

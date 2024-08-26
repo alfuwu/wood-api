@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "wood-api:rubber_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "wood-api:rubber_planks"
+  }
+}

@@ -1,6 +1,5 @@
 package com.alfred.woodapi;
 
-import com.alfred.woodapi.WoodApi;
 import com.alfred.woodapi.block.HangingSignBlock;
 import com.alfred.woodapi.block.SignBlock;
 import com.alfred.woodapi.entity.BoatEntity;
@@ -18,19 +17,23 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.item.SignItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static com.alfred.woodapi.registry.Blocks.createButtonBlock;
 import static net.minecraft.block.Blocks.createLeavesBlock;
 import static net.minecraft.block.Blocks.createLogBlock;
 import static net.minecraft.item.Items.*;
+import static net.minecraft.block.Blocks.OAK_SAPLING;
 
 public class Wood {
     public static List<Wood> WOODS = new ArrayList<>();
     public Block log, leaves, wood, planks, strippedLog, strippedWood, sign, wallSign,
-            hangingSign, wallHangingSign, fence, fenceGate, door, slab, stairs, button, pressurePlate, trapdoor;
+            hangingSign, wallHangingSign, fence, fenceGate, door, slab, stairs, button, pressurePlate, trapdoor, sapling;
+    public SaplingGenerator saplingGenerator;
     public Item signItem, hangingSignItem;
     public BoatEntity.BoatType boatType;
     public Item boat;
@@ -85,6 +88,9 @@ public class Wood {
         wood.pressurePlate = Blocks.register(wood.name.withSuffixedPath("_pressure_plate"), new PressurePlateBlock(wood.blockSetType, FabricBlockSettings.create()), Blocks.get(wood.trapdoor), ItemGroups.BUILDING_BLOCKS);
         wood.button = Blocks.register(wood.name.withSuffixedPath("_button"), createButtonBlock(wood.blockSetType), Blocks.get(wood.pressurePlate), ItemGroups.BUILDING_BLOCKS);
         //Items.add(get(wood.button), LEVER, ItemGroups.REDSTONE);
+
+        wood.saplingGenerator = new SaplingGenerator(wood.name.toString(), 0.1F, Optional.empty(), Optional.empty(), Optional.of(TreeConfiguredFeatures.OAK), Optional.of(TreeConfiguredFeatures.FANCY_OAK), Optional.of(TreeConfiguredFeatures.OAK_BEES_005), Optional.of(TreeConfiguredFeatures.FANCY_OAK_BEES_005));
+        wood.sapling = Blocks.register(wood.name.withSuffixedPath("_sapling"), new SaplingBlock(wood.saplingGenerator, AbstractBlock.Settings.copyShallow(OAK_SAPLING)), CHERRY_SAPLING, ItemGroups.NATURAL);
 
         wood.boatType = new BoatEntity.BoatType(wood.planks, wood.name);
         wood.boat = Items.register(wood.name.withSuffixedPath("_boat"), new BoatItem(false, wood.boatType, new FabricItemSettings()));
