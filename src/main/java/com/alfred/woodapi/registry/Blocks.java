@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Blocks {
 	public static final List<Pair<Block, Identifier>> BLOCKS = new ArrayList<>();
-	public static final Wood RUBBER_WOOD = Wood.create(WoodApi.identifier("rubber"), null);
+	//public static final Wood RUBBER_WOOD = Wood.create(WoodApi.identifier("rubber"), null);
 	//public static final Block RUBBER_TREE_SAPLING = register("rubber_tree_sapling", new SaplingBlock(new RubberSaplingGenerator("rubber"), FabricBlockSettings.create().mapColor(MapColor.DARK_GREEN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS).pistonBehavior(PistonBehavior.DESTROY)), Items.CHERRY_SAPLING, ItemGroups.NATURAL);
 
 	public static <T extends Block> T register(Identifier id, T block, @Nullable Item after, RegistryKey<ItemGroup> group) {
